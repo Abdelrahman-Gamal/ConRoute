@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/route_logo"
+        android:id="@+id/logo"/>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn_round"
+        android:text="| Sign in with Facebook"
+        android:drawableLeft="@drawable/fb_logo"
+        android:gravity="center|left"
+        android:textSize="15sp"
+        android:paddingLeft="35dp"
+        android:id="@+id/btn_fb_login"
+        android:textColor="#FFDF175D"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/btn_fb_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_round"
+        android:text=" | Sign in with Twitter"
+        android:drawableLeft="@drawable/twitter_logo"
+        android:gravity="center|left"
+        android:textSize="15sp"
+        android:paddingLeft="35dp"
+        android:id="@+id/btn_tw_login"
+        android:textColor="#FFDF175D"
+        />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/btn_tw_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_round"
+        android:text="Sign up"
+        android:textSize="15sp"
+        android:id="@+id/btn_signup"
+        android:textColor="#FFDF175D"
+        />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/btn_signup"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="22dp"
+    android:text="@string/already"
+    android:textColor="#ffffff"
+    android:textSize="14sp"
+    android:textAllCaps="true"
+    android:textStyle="bold"
+    android:background="@drawable/txt_underline"
+    android:gravity="center"
+    android:id="@+id/txt_register"
+    android:clickable="true"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

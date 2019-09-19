@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create"
+    android:background="@drawable/bg_app">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/route_logo"
+        android:id="@+id/logo"
+        />
+
+    <TextView
+        android:id="@+id/txt_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Create Your Login"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/txt_create"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:hint="Your Name "
+        android:textColorHint="@color/whitee"
+        android:paddingLeft="15dp"
+        android:textColorHighlight="@color/white"
+        android:id="@+id/et_name_create"
+
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/et_name_create"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/whitee"
+        android:hint="Password "
+        android:paddingLeft="15dp"
+        android:id="@+id/et_pass_create"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@id/et_pass_create"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/whitee"
+        android:hint="Re-Enter Passowrd  "
+        android:paddingLeft="15dp"
+        android:id="@+id/et_repass_create"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/et_repass_create"
+        app:layout_constraintTop_toBottomOf="@id/et_repass_create"
+        android:id="@+id/agree"
+        android:gravity="center|end"
+        android:layout_marginTop="20dp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:buttonTint="@color/checkbox"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agree To Terms % Condtions"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/agree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_cancel_login"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel "
+            android:background="@drawable/btn_round"
+            android:textColor="#FFDF175D"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btn_save_login"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_round"
+            android:text="Save"
+            android:textColor="#FFDF175D"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ConRoute</string>
+    <string name="already"><u>already registered? sign in</u></string>
+</resources>
